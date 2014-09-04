@@ -1,2 +1,13 @@
-<p>This is the partial for view 1.</p>Hello from partials/partial1.html
+<p>This is the partial for view 1.</p><!--Hello from partials/partial1.html-->
+<!-- This is how you do a comment in html -->
+
   <p>Nothing here {{'yet' + '!'}}</p>
+	  <div ng-controller="PhoneListCtrl">
+		  <ul>
+		    <li ng-repeat="phone in phones">
+		      {{phone.name}}
+		      <p>{{phone.snippet}}</p>
+		    </li>
+		  </ul>
+
+	  </div>
