@@ -12,6 +12,7 @@ angular.module('campsiteApp.controllers', [])
 	    {'name': 'Church pavilion in Woodland, Utah',
 	     'snippet': 'Cold night. No one kicked me out.'}
   ];
+      $scope.name = "World";
 
   }])
   .controller('MyCtrl2', ['$scope', function($scope) {
