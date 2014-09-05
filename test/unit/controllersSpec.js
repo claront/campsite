@@ -17,6 +17,8 @@ describe('controllers', function(){
         ctrl = $controller('CampSiteCtrl', {$scope:scope});
 
     expect(scope.campsites.length).toBe(3);
+
+    expect(scope.name).toBe('World');
   }));
 
   it('should ....', inject(function($controller) {
