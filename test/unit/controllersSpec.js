@@ -12,6 +12,13 @@ describe('controllers', function(){
     expect(CampSiteCtrl).toBeDefined();
   }));
 
+  it('should create "campsites" model with 3 campsites', inject(function($controller) {
+    var scope = {},
+        ctrl = $controller('CampSiteCtrl', {$scope:scope});
+
+    expect(scope.campsites.length).toBe(3);
+  }));
+
   it('should ....', inject(function($controller) {
     //spec body
     var myCtrl2 = $controller('MyCtrl2', { $scope: {} });
