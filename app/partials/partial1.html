@@ -2,13 +2,26 @@
 <!-- This is how you do a comment in html -->
 
   <div ng-controller="CampSiteCtrl">
-	  <ul>
-	    <li ng-repeat="campsite in campsites">
-	      {{campsite.name}}
-	      <p>{{campsite.snippet}}</p>
-	    </li>
-	    <li>
-	    	<p>Total number of campsites: {{campsites.length}}</p>
-	    </li>
-	  </ul>
-  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <!--Sidebar content-->
+
+        Search: <input ng-model="query">
+
+      </div>
+      <div class="col-md-10">
+        <!--Body content-->
+
+        <ul class="phones">
+		    <li ng-repeat="campsite in campsites | filter:query">
+		      {{campsite.name}}
+		      <p>{{campsite.snippet}}</p>
+		    </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>  
+</div>
