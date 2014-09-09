@@ -6,10 +6,33 @@ describe('CampSite App', function() {
 
   browser.get('index.html');
 
+
   it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
     expect(browser.getLocationAbsUrl()).toMatch("/view1");
   });
 
+  describe('CampSite list view', function() {
+
+    beforeEach(function() {
+      browser.get('index.html#/view1');
+    });
+
+
+    it('should filter the phone list as user types into the search box', function() {
+
+      var phoneList = element.all(by.repeater('campsite in campsites'));
+      var query = element(by.model('query'));
+
+      expect(phoneList.count()).toBe(3);
+
+      query.sendKeys('Lambs');
+      expect(phoneList.count()).toBe(1);
+
+      query.clear();
+      query.sendKeys('but');
+      expect(phoneList.count()).toBe(2);
+    });
+  });
 
   describe('view1', function() {
 
