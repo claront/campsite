@@ -18,7 +18,7 @@ describe('CampSite App', function() {
     });
 
 
-    it('should filter the phone list as user types into the search box', function() {
+    it('should filter the campsite list as user types into the search box', function() {
 
       var phoneList = element.all(by.repeater('campsite in campsites'));
       var query = element(by.model('query'));
