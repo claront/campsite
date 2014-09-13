@@ -6,13 +6,17 @@ angular.module('campsiteApp.controllers', [])
   .controller('CampSiteCtrl', ['$scope', function($scope) {
   	$scope.campsites = [
 	    {'name': 'Lambs Canyon',
-	     'snippet': 'Tall green grass, beautiful, but freeway noise'},
+	     'snippet': 'Tall green grass, beautiful, but freeway noise',
+	 	 'state': 'Utah'},
 	    {'name': 'Jordanell Resevoir',
-	     'snippet': 'Nice view of the Resevoir and Deer Valley, no overnight camping allowed, but didn\'t stop me.'},
+	     'snippet': 'Nice view of the Resevoir and Deer Valley, no overnight camping allowed, but didn\'t stop me.',
+	 	 'state': 'Utah'},
 	    {'name': 'Church pavilion in Woodland, Utah',
-	     'snippet': 'Cold night. No one kicked me out.'}
+	     'snippet': 'Cold night. No one kicked me out.',
+	 	 'state': 'Utah'}
   ];
-
+  
+  $scope.orderProp = 'age';
   }])
   .controller('MyCtrl2', ['$scope', function($scope) {
 
