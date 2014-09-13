@@ -3,8 +3,9 @@
 /* jasmine specs for controllers go here */
 
 describe('controllers', function(){
-  beforeEach(module('campsiteApp.controllers'));
+  var scope, ctrl;
 
+  beforeEach(module('campsiteApp.controllers'));
 
   it('should ....', inject(function($controller) {
     //spec body
@@ -13,11 +14,15 @@ describe('controllers', function(){
   }));
 
   it('should create "campsites" model with 3 campsites', inject(function($controller) {
-    var scope = {},
-        ctrl = $controller('CampSiteCtrl', {$scope:scope});
+    scope = {};
+    ctrl = $controller('CampSiteCtrl', {$scope:scope});
 
     expect(scope.campsites.length).toBe(3);
   }));
+
+  it('should set the default value of orderProp model', function() {
+    expect(scope.orderProp).toBe('state');
+  });
 
   it('should ....', inject(function($controller) {
     //spec body
