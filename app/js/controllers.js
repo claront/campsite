@@ -13,10 +13,10 @@ angular.module('campsiteApp.controllers', [])
 	 	 'state': 'Utah'},
 	    {'name': 'Church pavilion in Woodland, Utah',
 	     'snippet': 'Cold night. No one kicked me out.',
-	 	 'state': 'Utah'}
+	 	 'state': 'Colorado'}
   ];
-  
-  $scope.orderProp = 'age';
+
+  $scope.orderProp = 'state';
   }])
   .controller('MyCtrl2', ['$scope', function($scope) {
 

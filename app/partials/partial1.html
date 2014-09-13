@@ -11,15 +11,15 @@
         Search: <input ng-model="query">
         <select ng-model="orderProp">
           <option value="name">Alphabetical</option>
-          <option value="age">Newest</option>
+          <option value="state">State</option>
         </select>
       </div>
       <div class="col-md-10">
         <!--Body content-->
 
         <ul class="phones">
-		    <li ng-repeat="campsite in campsites | filter:query">
-		      {{campsite.name}}
+		    <li ng-repeat="campsite in campsites | filter:query | orderBy:orderProp">
+		      <span>{{campsite.name}}</span>
 		      <p>{{campsite.snippet}}</p>
 		    </li>
         </ul>
