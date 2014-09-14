@@ -20,17 +20,43 @@ describe('CampSite App', function() {
 
     it('should filter the campsite list as user types into the search box', function() {
 
-      var phoneList = element.all(by.repeater('campsite in campsites'));
+      var campsiteList = element.all(by.repeater('campsite in campsites'));
       var query = element(by.model('query'));
 
-      expect(phoneList.count()).toBe(3);
+      expect(campsiteList.count()).toBe(3);
 
       query.sendKeys('Lambs');
-      expect(phoneList.count()).toBe(1);
+      expect(campsiteList.count()).toBe(1);
 
       query.clear();
       query.sendKeys('but');
-      expect(phoneList.count()).toBe(2);
+      expect(campsiteList.count()).toBe(2);
+    });
+
+    it('should be possible to control campsite order via the drop down select box', function() {
+
+      var campsiteNameColumn = element.all(by.repeater('campsite in campsites').column('{{campsite.name}}'));
+      var query = element(by.model('query'));
+
+      function getNames() {
+        return campsiteNameColumn.map(function(elm) {
+          return elm.getText();
+        });
+      }
+
+      query.sendKeys('but'); //let's narrow the dataset to make the test assertions shorter
+
+      expect(getNames()).toEqual([
+        "Lambs Canyon",
+        "Jordanell Resevoir"
+      ]);
+
+      element(by.model('orderProp')).element(by.css('option[value="name"]')).click();
+
+      expect(getNames()).toEqual([
+        "Jordanell Resevoir",
+        "Lambs Canyon"
+      ]);
     });
   });
 
