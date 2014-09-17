@@ -23,7 +23,7 @@ describe('CampSite App', function() {
       var campsiteList = element.all(by.repeater('campsite in campsites'));
       var query = element(by.model('query'));
 
-      expect(campsiteList.count()).toBe(3);
+      expect(campsiteList.count()).toBe(5);
 
       query.sendKeys('Lambs');
       expect(campsiteList.count()).toBe(1);
