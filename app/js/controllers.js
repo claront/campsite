@@ -3,8 +3,12 @@
 /* Controllers */
 
 angular.module('campsiteApp.controllers', [])
-  .controller('CampSiteCtrl', ['$scope', function($scope) {
-  	$scope.campsites = [
+//  .controller('CampSiteCtrl', ['$scope', function($scope) {
+  .controller('CampSiteCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('campsites/campsites.json').success(function(data) {
+	  $scope.campsites = data;
+	});
+/*  	$scope.campsites = [
 	    {'name': 'Lambs Canyon',
 	     'snippet': 'Tall green grass, beautiful, but freeway noise',
 	 	 'state': 'Utah'},
@@ -14,7 +18,7 @@ angular.module('campsiteApp.controllers', [])
 	    {'name': 'Church pavilion in Woodland, Utah',
 	     'snippet': 'Cold night. No one kicked me out.',
 	 	 'state': 'Colorado'}
-  ];
+  ];*/
 
   $scope.orderProp = 'state';
   }])
