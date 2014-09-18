@@ -13,11 +13,11 @@ describe('controllers', function(){
     expect(CampSiteCtrl).toBeDefined();
   }));
 
-  it('should create "campsites" model with 3 campsites', inject(function($controller) {
+  it('should create "campsites" model with 5 campsites', inject(function($controller) {
     scope = {};
     ctrl = $controller('CampSiteCtrl', {$scope:scope});
 
-    expect(scope.campsites.length).toBe(3);
+    expect(scope.campsites.length).toBe(5);
   }));
 
   it('should set the default value of orderProp model', function() {
