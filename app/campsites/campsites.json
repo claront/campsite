@@ -1,30 +1,40 @@
 [
     {
         "date": "20130617",
+        "id": "20130617-lambs-canyon", 
+        "imageUrl": "",
         "name": "Lambs Canyon",
         "snippet": "Tall green grass, beautiful, but freeway noise",
         "state": "Utah"
      },
     {
         "date": "20130618",
+        "id": "20130618-jordanell-resevoir", 
+        "imageUrl": "",      
         "name": "Jordanell Resevoir",
         "snippet": "Nice view of the Resevoir and Deer Valley, no overnight camping allowed, but didn't stop me.",
         "state": "Utah"
      },
     {
         "date": "20130619",
+        "id": "20130619-woodland-utah", 
+        "imageUrl": "",
         "name": "Church pavilion in Woodland, Utah",
         "snippet": "Cold night. No one kicked me out.",
         "state": "Utah"
      },
     {
         "date": "20130620",
+        "id": "20130620-masashi-goto-memorial", 
+        "imageUrl": "http://follow.claront.com/images/goto_monument.png",
         "name": "Masashi Goto Memorial, Uintah Mtns, Utah",
         "snippet": "In the mountains by a Japanese memorial.",
         "state": "Utah"
      },
     {
         "date": "20130701",
+        "id": "20130701-dinosaur-colorado", 
+        "imageUrl": "",        
         "name": "Park in Dinosaur, Colorado",
         "snippet": "Park with a shower in a small town",
         "state": "Colorado"

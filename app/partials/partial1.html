@@ -17,13 +17,13 @@
         <!--Body content-->
 
         <ul class="campsites">
-		    <li ng-repeat="campsite in campsites | filter:query | orderBy:orderProp">
-		      <span>{{campsite.name}}</span>
+          <li ng-repeat="campsite in campsites | filter:query | orderBy:orderProp" class="thumbnail">
+            <a href="#/campsites/{{campsite.id}}" class="thumb"><img ng-src="{{campsite.imageUrl}}"></a>
+            <a href="#/campsites/{{campsite.id}}">{{campsite.name}}</a>
 		      <p>{{campsite.snippet}}</p>
 		    </li>
         </ul>
-
       </div>
     </div>
-  </div>  
+  </div> 
 </div>
