@@ -44,4 +44,8 @@ describe('CampSite controllers', function() {
       expect(myCtrl2).toBeDefined();
     }));
   });
+
+
+  describe('CampsiteDetailCtrl', function(){
+  });
 });
