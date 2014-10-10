@@ -15,6 +15,13 @@ describe('CampSite App', function() {
     expect(browser.getLocationAbsUrl()).toMatch("/view1");
   });
 
+  it('should redirect index.html to index.html#/view1', function() {
+    browser.get('index.html');
+    browser.getLocationAbsUrl().then(function(url) {
+        expect(url.split('#')[1]).toBe('/view1');
+      });
+  });
+
   describe('CampSite list view', function() {
 
     beforeEach(function() {
