@@ -11,9 +11,9 @@ describe('CampSite App', function() {
   // so that the test it('should render campsite specific links',...
   // passes as well, so for now, let's comment out the test
   // about redirect to /view1
-  // it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-  //   expect(browser.getLocationAbsUrl()).toMatch("/view1");
-  // });
+  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+  });
 
   describe('CampSite list view', function() {
 
