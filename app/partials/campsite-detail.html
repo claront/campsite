@@ -1,12 +1,12 @@
 TBD: detail view for <span>{{campsiteId}}</span>
-<img ng-src="{{phone.images[0]}}" class="phone">
+<img ng-src="{{campsite.images[0]}}" class="phone">
 
-<h1>{{phone.name}}</h1>
+<h1>{{campsite.name}}</h1>
 
-<p>{{phone.description}}</p>
+<p>{{campsite.description}}</p>
 
 <ul class="phone-thumbs">
-  <li ng-repeat="img in phone.images">
+  <li ng-repeat="img in campsite.images">
     <img ng-src="{{img}}">
   </li>
 </ul>
@@ -16,99 +16,99 @@ TBD: detail view for <span>{{campsiteId}}</span>
     <span>Availability and Networks</span>
     <dl>
       <dt>Availability</dt>
-      <dd ng-repeat="availability in phone.availability">{{availability}}</dd>
+      <dd ng-repeat="availability in campsite.availability">{{availability}}</dd>
     </dl>
   </li>
   <li>
     <span>Battery</span>
     <dl>
       <dt>Type</dt>
-      <dd>{{phone.battery.type}}</dd>
+      <dd>{{campsite.battery.type}}</dd>
       <dt>Talk Time</dt>
-      <dd>{{phone.battery.talkTime}}</dd>
+      <dd>{{campsite.battery.talkTime}}</dd>
       <dt>Standby time (max)</dt>
-      <dd>{{phone.battery.standbyTime}}</dd>
+      <dd>{{campsite.battery.standbyTime}}</dd>
     </dl>
   </li>
   <li>
     <span>Storage and Memory</span>
     <dl>
       <dt>RAM</dt>
-      <dd>{{phone.storage.ram}}</dd>
+      <dd>{{campsite.storage.ram}}</dd>
       <dt>Internal Storage</dt>
-      <dd>{{phone.storage.flash}}</dd>
+      <dd>{{campsite.storage.flash}}</dd>
     </dl>
   </li>
   <li>
     <span>Connectivity</span>
     <dl>
       <dt>Network Support</dt>
-      <dd>{{phone.connectivity.cell}}</dd>
+      <dd>{{campsite.connectivity.cell}}</dd>
       <dt>WiFi</dt>
-      <dd>{{phone.connectivity.wifi}}</dd>
+      <dd>{{campsite.connectivity.wifi}}</dd>
       <dt>Bluetooth</dt>
-      <dd>{{phone.connectivity.bluetooth}}</dd>
+      <dd>{{campsite.connectivity.bluetooth}}</dd>
       <dt>Infrared</dt>
-      <dd>{{phone.connectivity.infrared}}</dd>
+      <dd>{{campsite.connectivity.infrared}}</dd>
       <dt>GPS</dt>
-      <dd>{{phone.connectivity.gps}}</dd>
+      <dd>{{campsite.connectivity.gps}}</dd>
     </dl>
   </li>
   <li>
     <span>Android</span>
     <dl>
       <dt>OS Version</dt>
-      <dd>{{phone.android.os}}</dd>
+      <dd>{{campsite.android.os}}</dd>
       <dt>UI</dt>
-      <dd>{{phone.android.ui}}</dd>
+      <dd>{{campsite.android.ui}}</dd>
     </dl>
   </li>
   <li>
     <span>Size and Weight</span>
     <dl>
       <dt>Dimensions</dt>
-      <dd ng-repeat="dim in phone.sizeAndWeight.dimensions">{{dim}}</dd>
+      <dd ng-repeat="dim in campsite.sizeAndWeight.dimensions">{{dim}}</dd>
       <dt>Weight</dt>
-      <dd>{{phone.sizeAndWeight.weight}}</dd>
+      <dd>{{campsite.sizeAndWeight.weight}}</dd>
     </dl>
   </li>
   <li>
     <span>Display</span>
     <dl>
       <dt>Screen size</dt>
-      <dd>{{phone.display.screenSize}}</dd>
+      <dd>{{campsite.display.screenSize}}</dd>
       <dt>Screen resolution</dt>
-      <dd>{{phone.display.screenResolution}}</dd>
+      <dd>{{campsite.display.screenResolution}}</dd>
       <dt>Touch screen</dt>
-      <dd>{{phone.display.touchScreen}}</dd>
+      <dd>{{campsite.display.touchScreen}}</dd>
     </dl>
   </li>
   <li>
     <span>Hardware</span>
     <dl>
       <dt>CPU</dt>
-      <dd>{{phone.hardware.cpu}}</dd>
+      <dd>{{campsite.hardware.cpu}}</dd>
       <dt>USB</dt>
-      <dd>{{phone.hardware.usb}}</dd>
-      <dt>Audio / headphone jack</dt>
-      <dd>{{phone.hardware.audioJack}}</dd>
+      <dd>{{campsite.hardware.usb}}</dd>
+      <dt>Audio / headcampsite jack</dt>
+      <dd>{{campsite.hardware.audioJack}}</dd>
       <dt>FM Radio</dt>
-      <dd>{{phone.hardware.fmRadio}}</dd>
+      <dd>{{campsite.hardware.fmRadio}}</dd>
       <dt>Accelerometer</dt>
-      <dd>{{phone.hardware.accelerometer}}</dd>
+      <dd>{{campsite.hardware.accelerometer}}</dd>
     </dl>
   </li>
   <li>
     <span>Camera</span>
     <dl>
       <dt>Primary</dt>
-      <dd>{{phone.camera.primary}}</dd>
+      <dd>{{campsite.camera.primary}}</dd>
       <dt>Features</dt>
-      <dd>{{phone.camera.features.join(', ')}}</dd>
+      <dd>{{campsite.camera.features.join(', ')}}</dd>
     </dl>
   </li>
   <li>
     <span>Additional Features</span>
-    <dd>{{phone.additionalFeatures}}</dd>
+    <dd>{{campsite.additionalFeatures}}</dd>
   </li>
 </ul>
