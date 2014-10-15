@@ -11,9 +11,11 @@ angular.module('campsiteApp.controllers', [])
   $scope.orderProp = 'state';
   }])
 
-  .controller('CampsiteDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.campsiteId = $routeParams.campsiteId;
+  .controller('CampsiteDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    $http.get('campsites/' + $routeParams.campsiteId + '.json').success(function(data) {
+      $scope.campsite = data;
+    });
   }])
 
   .controller('MyCtrl2', ['$scope', function($scope) {

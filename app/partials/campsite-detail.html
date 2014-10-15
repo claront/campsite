@@ -1,20 +1,20 @@
-TBD: detail view for <span>{{campsiteId}}</span>
-<img ng-src="http://follow.claront.com/images/goto_monument.png" class="campsite">
-<img class="left" src="/app/img/camping-clipart-1021798_orig.gif" width="324" height="203">
+<img ng-src="{{campsite.images[0]}}" class="campsite">
 
 <h1>{{campsite.name}} : Campsite name here</h1>
 
 <p>{{campsite.description}}</p>
 
 <ul class="campsite-thumbs">
+	hello campsite thumbs
   <li ng-repeat="img in campsite.images">
-    <img ng-src="{{img}}hello img">
+    <img ng-src="{{img}}">
   </li>
 </ul>
 
 <ul class="specs">
   <li>
     <span>Availability and Networks</span>
+    TBD: detail view for <span>{{campsiteId}}</span>
     <dl>
       <dt>Availability</dt>
       <dd ng-repeat="availability in campsite.availability">{{availability}}</dd>
