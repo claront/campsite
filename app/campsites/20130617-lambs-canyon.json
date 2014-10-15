@@ -46,12 +46,12 @@
         "physicalKeyboard": false, 
         "usb": "USB 2.0"
     }, 
-    "id": "nexus-s", 
+    "id": "20130617-lambs-canyon", 
     "images": [
-        "img/campsites/nexus-s.0.jpg", 
-        "img/campsites/nexus-s.1.jpg", 
-        "img/campsites/nexus-s.2.jpg", 
-        "img/campsites/nexus-s.3.jpg"
+        "img/campsites/20130617-lambs-canyon.0.jpg", 
+        "img/campsites/20130617-lambs-canyon.1.jpg", 
+        "img/campsites/20130617-lambs-canyon.2.jpg", 
+        "img/campsites/20130617-lambs-canyon.3.jpg"
     ], 
     "name": "Nexus S", 
     "sizeAndWeight": {
