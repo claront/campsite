@@ -12,30 +12,25 @@
 
 <ul class="specs">
   <li>
-    <span>Availability and Networks</span>
+    <span>Type of Campsite</span>
+    <dd>{{campsite.type}}</dd>
+  </li>
+  <li>
+    <span>Location</span>
     <dl>
-      <dt>Availability</dt>
-      <dd ng-repeat="availability in campsite.availability">{{availability}}</dd>
+      <dt>Description</dt>
+      <dd>{{campsite.location.description}}</dd>
+      <dt>Degrees</dt>
+      <dd>{{campsite.location.degrees}}</dd>
     </dl>
   </li>
   <li>
-    <span>Battery</span>
+    <span>Dates</span>
     <dl>
-      <dt>Type</dt>
-      <dd>{{campsite.battery.type}}</dd>
-      <dt>Talk Time</dt>
-      <dd>{{campsite.battery.talkTime}}</dd>
-      <dt>Standby time (max)</dt>
-      <dd>{{campsite.battery.standbyTime}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Storage and Memory</span>
-    <dl>
-      <dt>RAM</dt>
-      <dd>{{campsite.storage.ram}}</dd>
-      <dt>Internal Storage</dt>
-      <dd>{{campsite.storage.flash}}</dd>
+      <dt>Start</dt>
+      <dd>{{campsite.dates.start}}</dd>
+      <dt>End</dt>
+      <dd>{{campsite.dates.end}}</dd>
     </dl>
   </li>
   <li>

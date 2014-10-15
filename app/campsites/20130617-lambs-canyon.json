@@ -4,18 +4,10 @@
         "os": "Android 2.3", 
         "ui": "Android"
     }, 
-    "availability": [
-        "O2,", 
-        "Orange,", 
-        "Singtel,", 
-        "StarHub,", 
-        "T-Mobile,", 
-        "Vodafone"
-    ], 
-    "battery": {
-        "standbyTime": "428 hours", 
-        "talkTime": "6 hours", 
-        "type": "Lithium Ion (Li-Ion) (1500 mAH)"
+    "type": "Rough", 
+    "location": {
+        "description": "1700 Lamb's Canyon Road, Uinta-Wasatch-Cache National Forest, Salt Lake City, UT 84109, USA",
+        "degrees": "40.740094, -111.668583"
     }, 
     "camera": {
         "features": [
@@ -61,8 +53,8 @@
         ], 
         "weight": "129.0 grams"
     }, 
-    "storage": {
-        "flash": "16384MB", 
-        "ram": "512MB"
+    "dates": {
+        "start": "17 June 2013", 
+        "end": "18 June 2013"
     }
 }
