@@ -5,7 +5,6 @@
         "ui": "Android"
     }, 
     "availability": [
-        "M1,", 
         "O2,", 
         "Orange,", 
         "Singtel,", 
@@ -53,7 +52,7 @@
         "img/campsites/20130617-lambs-canyon.2.jpg", 
         "img/campsites/20130617-lambs-canyon.3.jpg"
     ], 
-    "name": "Nexus S", 
+    "name": "Lambs Canyon", 
     "sizeAndWeight": {
         "dimensions": [
             "63.0 mm (w)", 

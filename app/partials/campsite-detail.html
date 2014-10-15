@@ -1,6 +1,6 @@
 <img ng-src="{{campsite.images[0]}}" class="campsite">
 
-<h1>{{campsite.name}} : Campsite name here</h1>
+<h1>{{campsite.name}}</h1>
 
 <p>{{campsite.description}}</p>
 
@@ -14,7 +14,6 @@
 <ul class="specs">
   <li>
     <span>Availability and Networks</span>
-    TBD: detail view for <span>{{campsiteId}}</span>
     <dl>
       <dt>Availability</dt>
       <dd ng-repeat="availability in campsite.availability">{{availability}}</dd>
