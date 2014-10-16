@@ -12,10 +12,6 @@
 
 <ul class="specs">
   <li>
-    <span>Type of Campsite</span>
-    <dd>{{campsite.type}}</dd>
-  </li>
-  <li>
     <span>Location</span>
     <dl>
       <dt>Description</dt>
@@ -34,72 +30,8 @@
     </dl>
   </li>
   <li>
-    <span>Connectivity</span>
-    <dl>
-      <dt>Network Support</dt>
-      <dd>{{campsite.connectivity.cell}}</dd>
-      <dt>WiFi</dt>
-      <dd>{{campsite.connectivity.wifi}}</dd>
-      <dt>Bluetooth</dt>
-      <dd>{{campsite.connectivity.bluetooth}}</dd>
-      <dt>Infrared</dt>
-      <dd>{{campsite.connectivity.infrared}}</dd>
-      <dt>GPS</dt>
-      <dd>{{campsite.connectivity.gps}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Android</span>
-    <dl>
-      <dt>OS Version</dt>
-      <dd>{{campsite.android.os}}</dd>
-      <dt>UI</dt>
-      <dd>{{campsite.android.ui}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Size and Weight</span>
-    <dl>
-      <dt>Dimensions</dt>
-      <dd ng-repeat="dim in campsite.sizeAndWeight.dimensions">{{dim}}</dd>
-      <dt>Weight</dt>
-      <dd>{{campsite.sizeAndWeight.weight}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Display</span>
-    <dl>
-      <dt>Screen size</dt>
-      <dd>{{campsite.display.screenSize}}</dd>
-      <dt>Screen resolution</dt>
-      <dd>{{campsite.display.screenResolution}}</dd>
-      <dt>Touch screen</dt>
-      <dd>{{campsite.display.touchScreen}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Hardware</span>
-    <dl>
-      <dt>CPU</dt>
-      <dd>{{campsite.hardware.cpu}}</dd>
-      <dt>USB</dt>
-      <dd>{{campsite.hardware.usb}}</dd>
-      <dt>Audio / headcampsite jack</dt>
-      <dd>{{campsite.hardware.audioJack}}</dd>
-      <dt>FM Radio</dt>
-      <dd>{{campsite.hardware.fmRadio}}</dd>
-      <dt>Accelerometer</dt>
-      <dd>{{campsite.hardware.accelerometer}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Camera</span>
-    <dl>
-      <dt>Primary</dt>
-      <dd>{{campsite.camera.primary}}</dd>
-      <dt>Features</dt>
-      <dd>{{campsite.camera.features.join(', ')}}</dd>
-    </dl>
+    <span>Type of Campsite</span>
+    <dd>{{campsite.type}}</dd>
   </li>
   <li>
     <span>Additional Features</span>
