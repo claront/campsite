@@ -118,8 +118,8 @@ describe('CampSite App', function() {
     });
 
 
-    it('should display placeholder page with campsiteId', function() {
-      expect(element(by.binding('campsiteId')).getText()).toBe('20130618-jordanell-resevoir');
+    it('should display campsite detail page with campsite name', function() {
+      expect(element(by.binding('campsite.name')).getText()).toBe('Jordanell Resevoir');
     });
   });
 });
