@@ -1,0 +1,23 @@
+{
+
+    "id": "20130618-jordanell-resevoir",
+    "name": "Jordanell Resevoir",
+    "images": [
+        "img/campsites/20130618-jordanell-resevoir.0.jpg", 
+        "img/campsites/20130618-jordanell-resevoir.1.jpg", 
+        "img/campsites/20130618-jordanell-resevoir.2.jpg", 
+        "img/campsites/20130618-jordanell-resevoir.3.jpg"
+    ],
+    "description": "A spectacular view of the mountains and Jordanell Reservoir. Pitched my tent in a more barren spot than yesterday.  This was a day use only area primarily as access to the reservoir for fishing at the reservoir.", 
+    "location": {
+        "description": "Jordanell Resevoir, Kamas, UT 84036, USA",
+        "degrees": "40.653861, -111.413731",
+        "altitude": "1,910 meters (6,266 feet)"
+    },
+    "dates": {
+        "start": "18 June 2013", 
+        "end": "19 June 2013"
+    },
+    "type": "Rough",
+    "comments": "No overnight camping allowed, but no one kicked me out.  Got the tent up at sunset and down soon after sunrise.  I had the place mostly to myself."
+}
