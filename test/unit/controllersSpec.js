@@ -47,5 +47,23 @@ describe('CampSite controllers', function() {
 
 
   describe('CampsiteDetailCtrl', function(){
+    var scope, $httpBackend, ctrl;
+
+    beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('campsites/xyz.json').respond({name:'campsite xyz'});
+
+      $routeParams.campsiteId = 'xyz';
+      scope = $rootScope.$new();
+      ctrl = $controller('CampsiteDetailCtrl', {$scope: scope});
+    }));
+
+
+    it('should fetch campsite detail', function() {
+      expect(scope.campsite).toBeUndefined();
+      $httpBackend.flush();
+
+      expect(scope.campsite).toEqual({name:'campsite xyz'});
+    });
   });
 });
