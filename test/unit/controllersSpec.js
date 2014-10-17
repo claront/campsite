@@ -50,10 +50,12 @@ describe('CampSite controllers', function() {
     var scope, $httpBackend, ctrl;
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
+//    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('campsites/xyz.json').respond({name:'campsite xyz'});
+//      $httpBackend.expectGET('campsites/xyz.json').respond({name:'campsite xyz'});
+      $httpBackend.expectGET('campsites/20130618-jordanell-resevoir.json').respond({name:'Jordanell Resevoir'});
 
-      $routeParams.campsiteId = 'xyz';
+      //$routeParams.campsiteId = 'xyz';
       scope = $rootScope.$new();
       ctrl = $controller('CampsiteDetailCtrl', {$scope: scope});
     }));
@@ -63,7 +65,7 @@ describe('CampSite controllers', function() {
       expect(scope.campsite).toBeUndefined();
       $httpBackend.flush();
 
-      expect(scope.campsite).toEqual({name:'campsite xyz'});
+      expect(scope.campsite).toEqual({name:'Jordanell Resevoir'});
     });
   });
 });

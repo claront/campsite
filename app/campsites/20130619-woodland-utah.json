@@ -1,0 +1,23 @@
+{
+
+    "id": "20130619-woodland-utah",
+    "name": "Jordanell Resevoir",
+    "images": [
+        "img/campsites/20130619-woodland-utah.0.jpg", 
+        "img/campsites/20130619-woodland-utah.1.jpg", 
+        "img/campsites/20130619-woodland-utah.2.jpg", 
+        "img/campsites/20130619-woodland-utah.3.jpg"
+    ],
+    "description": "A spectacular view of the mountains and Jordanell Reservoir. Pitched my tent in a more barren spot than yesterday.  This was a day use only area primarily as access to the reservoir for fishing at the reservoir.", 
+    "location": {
+        "description": "2830 E State Highway 35, Kamas, UT 84036, USA",
+        "degrees": "40.580678, -111.226289",
+        "altitude": "2,034 meters (6,673 feet)"
+    },
+    "dates": {
+        "start": "19 June 2013", 
+        "end": "20 June 2013"
+    },
+    "type": "Park pavilion",
+    "comments": "No overnight camping allowed, but no one kicked me out.  Got the tent up at sunset and down soon after sunrise.  I had the place mostly to myself."
+}
