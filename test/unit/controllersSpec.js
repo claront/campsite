@@ -3,10 +3,11 @@
 /* jasmine specs for controllers go here */
 describe('CampSite controllers', function() {
 
+  beforeEach(module('campsiteApp'));
+
   describe('CampSiteCtrl', function(){
     var scope, ctrl, $httpBackend;
 
-    beforeEach(module('campsiteApp'));
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('campsites/campsites.json').
@@ -50,12 +51,10 @@ describe('CampSite controllers', function() {
     var scope, $httpBackend, ctrl;
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
-//    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-//      $httpBackend.expectGET('campsites/xyz.json').respond({name:'campsite xyz'});
       $httpBackend.expectGET('campsites/20130618-jordanell-resevoir.json').respond({name:'Jordanell Resevoir'});
 
-      //$routeParams.campsiteId = 'xyz';
+      $routeParams.campsiteId = '20130618-jordanell-resevoir';
       scope = $rootScope.$new();
       ctrl = $controller('CampsiteDetailCtrl', {$scope: scope});
     }));
