@@ -74,7 +74,7 @@ describe('CampSite App', function() {
     it('should render campsite specific links', function() {
       var query = element(by.model('query'));
       query.sendKeys('woodland');
-      element(by.css('.campsites li a')).click();
+      element.all(by.css('.campsites li a')).first().click();
       browser.getLocationAbsUrl().then(function(url) {
         expect(url.split('#')[1]).toBe('/campsites/20130619-woodland-utah');
       });
