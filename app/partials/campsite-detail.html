@@ -33,7 +33,13 @@
   </li>
   <li>
     <span>Type of Campsite</span>
-    <dd>{{campsite.type}}</dd>
+    <dl>
+      <dt>Description</dt>
+      <dd>{{campsite.type.description}}</dd>
+      <dt>Rough</dt>
+      <dd>{{campsite.type.rough | checkmark}}</dd>
+      <dt>Improved</dt>
+      <dd>{{campsite.type.improved | checkmark}}</dd>
   </li>
   <li>
     <span>Comments</span>

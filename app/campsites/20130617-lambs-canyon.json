@@ -19,5 +19,10 @@
         "end": "18 June 2013"
     },
     "type": "Rough",
+    "type": {
+        "description": "Near the road, but grassy and peaceful",
+        "rough": true, 
+        "improved": false
+    }, 
     "comments": "It was not an official campsite, but what is commonly referred to as a rough camp.  No culinary water, toilets or picnic table, but just the natural beauty of being in the mountains in early summer.  It made me a little nervous not knowing who owned the property.  I had not gotten anyone's permission to camp here.  I cheated on this campsite in that I had driven my car up a few days before to scout out a camping spot.  This is only camping spot on the walk with which I had that luxury."
 }

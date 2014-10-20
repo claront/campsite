@@ -18,6 +18,10 @@
         "start": "19 June 2013", 
         "end": "20 June 2013"
     },
-    "type": "Park pavilion",
+    "type": {
+        "description": "Park pavilion",
+        "rough": true, 
+        "improved": false
+    }, 
     "comments": "No overnight camping allowed, but no one kicked me out.  Got the tent up at sunset and down soon after sunrise.  I had the place mostly to myself."
 }
