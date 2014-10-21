@@ -48,11 +48,18 @@ describe('CampSite controllers', function() {
 
 
   describe('CampsiteDetailCtrl', function(){
-    var scope, $httpBackend, ctrl;
+    // var scope, $httpBackend, ctrl;
+    var scope, $httpBackend, ctrl,
+        jordanellCampsiteData = function() {
+          return {
+            name: 'Jordanell Resevoir',
+                images: ['image/url1.png', 'image/url2.png']
+          }
+        };
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('campsites/20130618-jordanell-resevoir.json').respond({name:'Jordanell Resevoir'});
+      $httpBackend.expectGET('campsites/20130618-jordanell-resevoir.json').respond(jordanellCampsiteData());
 
       $routeParams.campsiteId = '20130618-jordanell-resevoir';
       scope = $rootScope.$new();
@@ -64,7 +71,7 @@ describe('CampSite controllers', function() {
       expect(scope.campsite).toBeUndefined();
       $httpBackend.flush();
 
-      expect(scope.campsite).toEqual({name:'Jordanell Resevoir'});
+      expect(scope.campsite).toEqual(jordanellCampsiteData());
     });
   });
 });
