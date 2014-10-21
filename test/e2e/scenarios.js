@@ -121,5 +121,20 @@ describe('CampSite App', function() {
     it('should display campsite detail page with campsite name', function() {
       expect(element(by.binding('campsite.name')).getText()).toBe('Jordanell Resevoir');
     });
+
+
+    it('should display the first campsite image as the main campsite image', function() {
+      expect(element(by.css('img.campsite')).getAttribute('src')).toMatch(/img\/campsites\/20130618-jordanell-resevoir.0.jpg/);
+    });
+
+
+    it('should swap main image if a thumbnail image is clicked on', function() {
+      element(by.css('.campsite-thumbs li:nth-child(3) img')).click();
+      expect(element(by.css('img.campsite')).getAttribute('src')).toMatch(/img\/campsites\/20130618-jordanell-resevoir.2.jpg/);
+
+      element(by.css('.campsite-thumbs li:nth-child(1) img')).click();
+      expect(element(by.css('img.campsite')).getAttribute('src')).toMatch(/img\/campsites\/20130618-jordanell-resevoir.0.jpg/);
+    });
+
   });
 });
