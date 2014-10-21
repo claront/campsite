@@ -15,7 +15,12 @@ angular.module('campsiteApp.controllers', [])
   function($scope, $routeParams, $http) {
     $http.get('campsites/' + $routeParams.campsiteId + '.json').success(function(data) {
       $scope.campsite = data;
+      $scope.mainImageUrl = data.images[0];
     });
+
+    $scope.setImage = function(imageUrl) {
+      $scope.mainImageUrl = imageUrl;
+    }
   }])
 
   .controller('MyCtrl2', ['$scope', function($scope) {
