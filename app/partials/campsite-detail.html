@@ -1,4 +1,4 @@
-<img ng-src="{{campsite.images[0]}}" class="campsite">
+<img ng-src="{{mainImageUrl}}" class="campsite">
 
 <h1>{{campsite.name}}</h1>
 
@@ -6,7 +6,7 @@
 
 <ul class="campsite-thumbs">
   <li ng-repeat="img in campsite.images">
-    <img ng-src="{{img}}">
+    <img ng-src="{{img}}" ng-click="setImage(img)">
   </li>
 </ul>
 
