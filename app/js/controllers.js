@@ -18,6 +18,7 @@ angular.module('campsiteApp.controllers', [])
       $scope.mainImageUrl = data.images[0];
     });
 
+
     $scope.setImage = function(imageUrl) {
       $scope.mainImageUrl = imageUrl;
     }
