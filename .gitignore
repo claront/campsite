@@ -2,6 +2,10 @@ logs/*
 !.gitkeep
 node_modules/
 bower_components/
+app/bower_components_new/
+app/bower_components_old_/
+bower.newer.json
+bower.json.original
 tmp
 .DS_Store
 .idea
