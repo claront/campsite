@@ -8,7 +8,8 @@ angular.module('campsiteApp', [
   'campsiteApp.services',
   'campsiteApp.directives',
   'campsiteApp.controllers',
-  'campsiteguideFilters'
+  'campsiteguideFilters',
+  'campsiteguideServices'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {
