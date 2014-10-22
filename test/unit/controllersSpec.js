@@ -3,7 +3,16 @@
 /* jasmine specs for controllers go here */
 describe('CampSite controllers', function() {
 
+  beforeEach(function(){
+    this.addMatchers({
+      toEqualData: function(expected) {
+        return angular.equals(this.actual, expected);
+      }
+    });
+  });
+
   beforeEach(module('campsiteApp'));
+  beforeEach(module('campsiteguideServices'));
 
   describe('CampSiteCtrl', function(){
     var scope, ctrl, $httpBackend;
@@ -19,11 +28,11 @@ describe('CampSite controllers', function() {
 
 
     it('should create "campsites" model with 2 campsites fetched from xhr', function() {
-      expect(scope.campsites).toBeUndefined();
+      expect(scope.campsites).toEqualData([]);
       $httpBackend.flush();
 
-      expect(scope.campsites).toEqual([{name: 'Lambs Canyon'},
-                                       {name: 'Jordanell Resevoir'}]);
+      expect(scope.campsites).toEqualData([{name: 'Lambs Canyon'},
+                                           {name: 'Jordanell Resevoir'}]);
     });
 
 
@@ -66,12 +75,11 @@ describe('CampSite controllers', function() {
       ctrl = $controller('CampsiteDetailCtrl', {$scope: scope});
     }));
 
-
     it('should fetch campsite detail', function() {
-      expect(scope.campsite).toBeUndefined();
+      expect(scope.campsite).toEqualData({});
       $httpBackend.flush();
 
-      expect(scope.campsite).toEqual(jordanellCampsiteData());
+      expect(scope.campsite).toEqualData(jordanellCampsiteData());
     });
   });
 });
