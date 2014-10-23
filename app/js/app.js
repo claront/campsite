@@ -9,7 +9,8 @@ angular.module('campsiteApp', [
   'campsiteApp.directives',
   'campsiteApp.controllers',
   'campsiteguideFilters',
-  'campsiteguideServices'
+  'campsiteguideServices',
+  'campsiteguideAnimations'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {
