@@ -1,6 +1,6 @@
 'use strict';
 
-alert( $.fn.jquery );
+// alert( $.fn.jquery );
 // Declare app level module which depends on filters, and services
 angular.module('campsiteApp', [
   'ngRoute',
@@ -8,6 +8,7 @@ angular.module('campsiteApp', [
   'campsiteApp.services',
   'campsiteApp.directives',
   'campsiteApp.controllers',
+  
   'campsiteguideFilters',
   'campsiteguideServices',
   'campsiteguideAnimations'

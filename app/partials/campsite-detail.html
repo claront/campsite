@@ -1,4 +1,9 @@
-<img ng-src="{{mainImageUrl}}" class="campsite">
+<div class="campsite-images">
+  <img ng-src="{{img}}"
+       class="campsite"
+       ng-repeat="img in campsite.images"
+       ng-class="{active: mainImageUrl==img}">
+</div>
 
 <h1>{{campsite.name}}</h1>
 
