@@ -1,4 +1,4 @@
-# campsite - angular-seed to AngularJS tutorial app
+# campsite app - angular-seed to AngularJS tutorial app
 
 WARNING: not a finished project yet, but getting close
 
