@@ -17,7 +17,8 @@
         <!--Body content-->
 
         <ul class="campsites">
-          <li ng-repeat="campsite in campsites | filter:query | orderBy:orderProp" class="thumbnail" campsite-listing">>
+          <li ng-repeat="campsite in campsites | filter:query | orderBy:orderProp" 
+          class="thumbnail campsite-listing">
             <a href="#/campsites/{{campsite.id}}" class="thumb"><img ng-src="{{campsite.imageUrl}}"></a>
             <a href="#/campsites/{{campsite.id}}">{{campsite.name}}</a>
 		      <p>{{campsite.snippet}}</p>
