@@ -1,3 +1,9 @@
+# campsite - angular-seed to AngularJS tutorial app
+
+WARNING: not a finished project yet, but getting close
+
+The idea with my campsite app is to use the angular-seed, and follow the steps in the [PhoneCat Tutorial App] (https://docs.angularjs.org/tutorial) to turn it into my own thing.  Along the way, I am demonstrating what I am learning about AngularJS.  Maybe, someone else will enjoy seeing how I did it.  Below is the stock README.md from the [angular-seed](https://github.com/angular/angular-seed)
+
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
