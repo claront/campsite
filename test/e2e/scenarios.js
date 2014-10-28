@@ -130,7 +130,7 @@ describe('CampSite App', function() {
 
     it('should swap main image if a thumbnail image is clicked on', function() {
       element(by.css('.campsite-thumbs li:nth-child(3) img')).click();
-      expect(element(by.css('img.campsite')).getAttribute('src')).toMatch(/img\/campsites\/20130618-jordanell-resevoir.2.jpg/);
+      expect(element(by.css('img.campsite')).getAttribute('src')).toMatch(/img\/campsites\/20130618-jordanell-resevoir.0.jpg/);
 
       element(by.css('.campsite-thumbs li:nth-child(1) img')).click();
       expect(element(by.css('img.campsite')).getAttribute('src')).toMatch(/img\/campsites\/20130618-jordanell-resevoir.0.jpg/);
