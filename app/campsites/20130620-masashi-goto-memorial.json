@@ -1,0 +1,27 @@
+{
+
+    "id": "20130620-masashi-goto-memorial",
+    "name": "Park in Dinosaur, Colorado",
+    "images": [
+        "img/campsites/20130701-dinosaur-colorado.0.jpg", 
+        "img/campsites/20130701-dinosaur-colorado.1.jpg", 
+        "img/campsites/20130701-dinosaur-colorado.2.jpg", 
+        "img/campsites/20130701-dinosaur-colorado.3.jpg"
+    ],
+    "description": "Dinosaur, Colorado, population 339, is in a dry area, even for the Western United States.  I threw out my spleeping bag next to the swings in a little park.  The woman at the convenience store said it was okay and told me that there was a shower in the restroom that I could use.", 
+    "location": {
+        "description": "UT-35, Woodland, Utah, USA",
+        "degrees": "40.515972 , -111.049803",
+        "altitude": "1,805 meters (5,922 feet)"
+    },
+    "dates": {
+        "start": "1 July 2013", 
+        "end": "2 July 2013"
+    },
+    "type": {
+        "description": "Park",
+        "rough": true, 
+        "improved": true
+    }, 
+    "comments": "Not really a campground, just a little city park.  Great to have a restroom with a shower."
+}
