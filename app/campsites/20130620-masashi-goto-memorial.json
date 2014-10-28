@@ -1,27 +1,27 @@
 {
 
     "id": "20130620-masashi-goto-memorial",
-    "name": "Park in Dinosaur, Colorado",
+    "name": "Masashi Goto Memorial, Uintah Mtns, Utah",
     "images": [
         "img/campsites/20130620-masashi-goto-memorial.0.jpg", 
         "img/campsites/20130620-masashi-goto-memorial.1.jpg", 
         "img/campsites/20130620-masashi-goto-memorial.2.jpg", 
         "img/campsites/20130620-masashi-goto-memorial.3.jpg"
     ],
-    "description": "Dinosaur, Colorado, population 339, is in a dry area, even for the Western United States.  I threw out my spleeping bag next to the swings in a little park.  The woman at the convenience store said it was okay and told me that there was a shower in the restroom that I could use.", 
+    "description": "Nice grassy spot near a monument to Masashi Goto, a Japanese aviator who died in a crash not far from the where the monument has been placed.  He was attempting a flight to navigate most of his way around the world in 1929.", 
     "location": {
         "description": "UT-35, Woodland, Utah, USA",
         "degrees": "40.515972 , -111.049803",
-        "altitude": "1,805 meters (5,922 feet)"
+        "altitude": "2,560 meters (8,400 feet)"
     },
     "dates": {
-        "start": "1 July 2013", 
-        "end": "2 July 2013"
+        "start": "20 June 2013", 
+        "end": "21 June 2013"
     },
     "type": {
-        "description": "Park",
+        "description": "Turnout for monument",
         "rough": true, 
-        "improved": true
+        "improved": false
     }, 
-    "comments": "Not really a campground, just a little city park.  Great to have a restroom with a shower."
+    "comments": "Not a campground, but plenty of parking space and plenty of grassy areas around the momument.  My grandson laid down on the pavement to enjoy the warmth of the sun."
 }
