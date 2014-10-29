@@ -43,6 +43,7 @@ body {
   overflow: hidden;
   position: relative;
   float: left;
+  margin-right: 1em;
 }
 
 .campsites {
@@ -103,7 +104,7 @@ ul.campsite-thumbs img:hover {
 
 ul.specs {
   clear: both;
-  margin: 0;
+  margin: 1em;
   padding: 0;
   list-style: none;
 }
